@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+*{
+  margin: 0%;
+  padding: 0%;
+  font-family: 'popins',sans-serif;
+  box-sizing: border-box;
+  outline: none;
+  color: aliceblue;
+
+}
+:root{
+  --prime : #3dd45b;
+}
+body{
+  background-color:rgb(17, 17, 39);
+}
+.navbar{
+  width: 100%;
+  display: flex;
+  position: fixed;
+  padding: 30px 120px;
+  background-color: transparent;
+  justify-content: space-between;
+  z-index: 1111;
+  transition: 0.5s ease;
+}
+.logo {
+  width: 170px;
+  height: 130px;
+  
+
+}
+
+ol{
+  display: flex;
+  margin: auto 0;
+
+}
+ol li{
+  list-style: none;
+  margin-right: 20px;
+
+}
+
+ol li a{
+  font-size: 20px;
+  font-weight: 500;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+ol li:hover a{
+  color: var(--prime);
+}
+
+.view{
+  width: 100%;
+  min-height: 80vh;
+  position: relative;
+}
+.home{
+  display: flex;
+  min-height: 120vh;
+  align-items: center;
+  justify-content: center;
+  clip-path: polygon(0 0,100% 0,100% 100%,80% 95%,0 100%);
+}
+
+.banner{
+height: 100%;
+  width: 100%;
+  position: absolute;
+  background: url(images/WhatsApp\ Image\ 2024-08-06\ at\ 14.03.19_a74a7fd3.jpg);
+  background-size: cover;
+  background-position:center;
+  filter: brightness(40%);
+}
+
+.hightlights{
+  width: 70%;
+  position: static;
+  display: inline-block;
+  z-index: 11;
+}
+
+.hightlights h3{
+  display: inline;
+  font-size: 3vw;
+  padding: 5px 20px;
+  font-weight: lighter;
+  text-transform: capitalize;
+  border-left: 6px solid var(--prime);
+}
+
+.hightlights h1{
+  font-size: 9vw;
+  text-align: center;
+  font-weight: normal;
+
+}
+
+.hightlights b{
+  color: var(--prime);
+  font-weight: 700;
+  font-family: sans-serif;
+}
+.hightlights .tagline{
+  color: aliceblue;
+  font-size: 1.5vw;
+  text-align: center;
+  font-weight: normal;
+}
+
+.hightlights .join{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-weight: 800;
+  padding: 5px 20px;
+  font-size: 1.5vw;
+  margin-top: 1.2em;
+  color: var(--prime);
+  border: 2px solid var(--prime);
+  border-radius: 50px;
+  background: transparent;
+  text-transform: uppercase;
+  transition: 0.3s ease;
+}
+
+.hightlights .join:hover{
+  color: #fff;
+  cursor: pointer;
+  letter-spacing: 1.5px;
+  background: var(--prime);
+}
+
+.main{
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 20px;
+
+
+
+}
+
+.main h2{
+  font-size: 2.5vw;
+  position: relative;
+  text-align: center;
+  padding-top: 100px;
+  display: inline-block;
+}
+span{
+  color: var(--prime);
+}
+
+.main h2:before{
+  position: absolute;
+  content: '';
+  background: var(--prime);
+  height: 3px;
+  width: 30%;
+  right: -15px;
+  bottom: 0;
+  border-radius: 50px;
+
+}
+
+.main h6{
+  margin-top: 10px;
+  font-size: 13px;
+  font-family: sans-serif;
+  font-weight: lighter;
+}
+
+.content{
+  position: relative;
+  display: flex;
+  width: 100%;
+  padding: 0 30px;
+  justify-content: baseline;
+  font-size: 25px;
+  
+}
+
+.about .content .cols{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 20px 70px;
+
+}
+.about .content .cols p b{
+  font-size: 20px;
+  margin-right: 2px;
+}
+
+.about .content .cols a{
+position: relative;
+top: 20px;
+color: #fff;
+background: var(--prime);
+padding: 5px 20px;
+border-radius: 5px;
+text-decoration: none;
+text-transform: capitalize;
+}
+
+.about .content .cols a:hover{
+  color: #000;
+  background: #fff;
+}
+
+.about .content .cols .box{
+  position: relative;
+  height: 550px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+.about .content .cols .box img{
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+ 
